@@ -9,6 +9,10 @@ export class ButtonsComponent implements OnInit {
 
   constructor() { }
 
+
+  test($event: MouseEvent) {
+
+  }
   ngOnInit(): void {
   }
 
