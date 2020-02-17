@@ -7,6 +7,8 @@ import { HelloComponent } from './hello/hello.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SectionComponent } from './section/section.component';
+import { TimeDisplayComponent } from './section/time-display/time-display.component';
+import { ButtonsComponent } from './section/buttons/buttons.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { SectionComponent } from './section/section.component';
     HelloComponent,
     HeaderComponent,
     FooterComponent,
-    SectionComponent
+    SectionComponent,
+    TimeDisplayComponent,
+    ButtonsComponent
   ],
   imports: [
     BrowserModule,
