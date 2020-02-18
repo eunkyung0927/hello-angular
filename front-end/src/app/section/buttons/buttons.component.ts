@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, } from '@angular/core';
+import { EventEmitter } from 'protractor';
 
 @Component({
   selector: 'app-buttons',
@@ -7,11 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonsComponent implements OnInit {
 
-  constructor() { }
+  //컴포넌트에 이벤트를 발생시킬 수 있도록 도와주는 데코레이터 
+  @Output() clickEvent = new EventEmitter();
+  constructor() {
+
+  }
 
 
-  test($event: MouseEvent) {
-
+  start() {
+    this.clickEvent.emit(10);
   }
   ngOnInit(): void {
   }
